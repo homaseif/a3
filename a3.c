@@ -33,6 +33,7 @@ int main(int argc, char *argv[]){
 	int attemptsBound = 25;
 	int xtmp;
 	int ytmp;
+	char c;
 	while(1){
 		if(flag == 1){
 			for(i = 0; i < streetsNumb; i++)
@@ -63,7 +64,7 @@ int main(int argc, char *argv[]){
 					for(k = 0; k < streetsNumb; k++)
 						free(streets[k]);
 					free(streets);
-					return 1;
+					exit(0);
 
 				}
 			}
@@ -85,7 +86,7 @@ int main(int argc, char *argv[]){
 		for(i = 0; i < streetsNumb; i++)
   			free(streets[i]);
   		free(streets);
-
+		fflush(stdout);
 		sleep(waitingTime);
 
 

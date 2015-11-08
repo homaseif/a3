@@ -1,4 +1,3 @@
-
 #!/usr/bin/python
 
 import sys
@@ -147,8 +146,8 @@ def printGraph(vertices, edges):
 	vertexList.append(str(len(vertices)))
 	print>>sys.stdout, ' '.join(vertexList)
 
-	print>>sys.stdout, "E",
 	edgeList = []
+	edgeList.append("E ")
 	edgeList.append('{')
 	for i in range(0, len(edges)):
 		edgeList.append('<')
@@ -160,7 +159,7 @@ def printGraph(vertices, edges):
 			edgeList.append(',')
 	edgeList.append('}')
 	print>>sys.stdout, ''.join(edgeList)
-	
+	sys.stdout.flush()	
 
 
 while True:
