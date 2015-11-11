@@ -1,0 +1,6 @@
+#!/bin/bash
+sleep 1
+cat input01.txt
+sleep 10
+
+
